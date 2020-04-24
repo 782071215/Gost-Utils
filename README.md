@@ -3,7 +3,7 @@
 
 ### 使用方法
 ```shell
-wget -N --no-check-certificate "https://raw.githubusercontent.com/bobkjl/Gost-Utils/master/install.sh" && bash install.sh
+wget -N --no-check-certificate "https://gitee.com/tianssde/Gost-Utils/raw/master/install.sh" && bash install.sh
 ```
 
 ### 功能说明
