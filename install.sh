@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 install_gost(){
     check_git
-    git clone https://github.com/bobkjl/Gost-Utils.git
+    git clone https://gitee.com/tianssde/Gost-Utils.git
 chmod -R 777 Gost-Utils && cd Gost-Utils && bash gost-Utils.sh
 }
 
