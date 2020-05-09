@@ -13,7 +13,7 @@ wget -N --no-check-certificate "https://gitee.com/bobkjl/Gost-Utils/raw/master/i
 ### 作者
 Telegram:[DerrickZH](https://t.me/DerrickZH "DerrickZH")
 
-Gitee版本与GitHub版本一样，Gitee为了方便国内机拉去代码
+Gitee版本与GitHub版本一样，Gitee为了方便国内机拉取代码
 
 GitHub地址:[Gost-Utils](https://github.com/bobkjl/Gost-Utils "Gost-Utils")
 ### 鸣谢
