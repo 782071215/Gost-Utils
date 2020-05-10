@@ -3,7 +3,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 install_gost(){
     install_tool
     check_git
-    git clone https://gitee.com/tianssde/Gost-Utils.git
+    git clone https://gitee.com/bobkjl/Gost-Utils.git
     cd Gost-Utils
     cp gost /root
     cp gost-Utils.sh /root
