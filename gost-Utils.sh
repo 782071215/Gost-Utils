@@ -231,7 +231,7 @@ set_Client(){
             eval $cmd
             echo -e "客户端隧道部署成功！"
             echo -e "加入开机自启动!"
-            sed -i "/gost_start(){/ a\\$cmd" gost_start.sh
+            sed -i "/gost_start(){/ a\\$cmd" /root/Gost-Utils/gost_start.sh
             autostart
                 elif [ "${vnum}" = "2" ]; then
                 cmd="nohup ./gost -L=tcp://:"${clientPort}"/"${serviceAddr}":"${servicePort}" -L=udp://:"${clientPort}"/"${serviceAddr}":"${servicePort}" -F="relay+${tunnelType}"://"${serviceAddr}":"${tunnelPort}" >"${creatlog}" 2>&1 & "
@@ -239,7 +239,7 @@ set_Client(){
             eval $cmd
             echo -e "客户端隧道部署成功！"
               echo -e "加入开机自启动!"
-            sed -i "/gost_start(){/ a\\$cmd" gost_start.sh
+            sed -i "/gost_start(){/ a\\$cmd" /root/Gost-Utils/gost_start.sh
             autostart
                 fi
         else
@@ -331,7 +331,7 @@ set_Server(){
             eval $cmd
             echo -e "服务端端隧道部署成功！"
               echo -e "加入开机自启动!"
-           sed -i "/gost_start(){/ a\\$cmd" gost_start.sh
+           sed -i "/gost_start(){/ a\\$cmd" /root/Gost-Utils/gost_start.sh
             autostart
                 elif [ "${vnum}" = "2" ]; then
                  cmd="nohup ./gost -L="relay+${tunnelType}"://:"${tunnelPort}" >"${creatlog}" 2>&1 &"
@@ -339,7 +339,7 @@ set_Server(){
             eval $cmd
             echo -e "服务端端隧道部署成功！"
               echo -e "加入开机自启动!"
-            sed -i "/gost_start(){/ a\\$cmd" gost_start.sh
+            sed -i "/gost_start(){/ a\\$cmd" /root/Gost-Utils/gost_start.sh
             autostart
                 fi
         else
