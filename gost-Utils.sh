@@ -56,7 +56,7 @@ Update(){
 #function
 
 gostonline(){
-    wget -qO /etc/profile.d/gostonline.sh https://raw.githubusercontent.com/bobkjl/gostonline/master/gostonline.sh||{
+    wget -qO /etc/profile.d/gostonline.sh https://gitee.com/bobkjl/gostonline/raw/master/gostonline.sh||{
         echo "脚本不存在，请通过github提交issue通知作者"
         exit 1
     }
@@ -64,7 +64,7 @@ gostonline(){
 }
 
 setupService(){
-    wget -qO /usr/local/bin/gostonline.sh https://raw.githubusercontent.com/bobkjl/gostonline/master/gostonline.sh||{
+    wget -qO /usr/local/bin/gostonline.sh https://gitee.com/bobkjl/gostonline/raw/master/gostonline.sh||{
         echo "脚本不存在，请通过github提交issue通知作者"
         exit 1
     }
