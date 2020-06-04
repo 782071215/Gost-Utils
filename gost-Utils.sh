@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 sh_ver="1.2.7"
-github="https://gitee.com/bobkjl/Gost-Utils/raw/master/"
+github="gitee.com/bobkjl/Gost-Utils/raw/master"
 
 # 设置字体颜色函数
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
@@ -34,7 +34,7 @@ function white(){
 
 Update(){
     echo -e "当前版本为 [ ${sh_ver} ]，开始检测最新版本..."
-    sh_new_ver=$(wget --no-check-certificate -qO- "http://${github}/gost-Utils.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
+    sh_new_ver=$(wget --no-check-certificate -qO- "https://${github}/gost-Utils.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
     [[ -z ${sh_new_ver} ]] && echo -e "${Error} 检测最新版本失败 !" && start_menu
     if [[ ${sh_new_ver} != ${sh_ver} ]]; then
         echo -e "发现新版本[ ${sh_new_ver} ]，是否更新？[Y/n]"
