@@ -12,9 +12,3 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/782071215/Gost
 - 一键配置Gost客户端
 ### 作者
 Telegram:[DerrickZH](https://t.me/DerrickZH "DerrickZH")
-
-Gitee版本与GitHub版本一样，Gitee为了方便国内机拉取代码
-
-GitHub地址:[Gost-Utils](https://github.com/bobkjl/Gost-Utils "Gost-Utils")
-### 鸣谢
-感谢[HelloWorld-create](https://github.com/HelloWorld-create "HelloWorld-create")提供的部分代码
